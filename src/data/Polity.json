@@ -1,0 +1,59 @@
+{
+  "PolitySyllabus": [
+    {
+      "Chapter": "INDIAN CONSTITUTION",
+      "Units": [
+        {
+          "UnitName": "Constitutional Framework & Preamble",
+          "Lessons": [
+            {
+              "LessonName": "Preamble & Salient Features",
+              "Topics": [
+                {
+                  "TopicName": "Preamble of the Constitution",
+                  "Facts": [
+                    "Sovereign, Socialist, Secular, Democratic, Republic.",
+                    "Adopted on 26th November 1949, came into full effect on 26th January 1950."
+                  ],
+                  "VisualisationIdea": "Interactive mind map of Indian constitutional articles, schedules, and amendments.",
+                  "ConceptUnits": [
+                    {
+                      "Id": 1,
+                      "Fact": "Sovereign, Socialist, Secular, Democratic, Republic.",
+                      "Flashcard": {
+                        "Front": "Which Constitutional Amendment added the terms 'Socialist', 'Secular', and 'Integrity' to the Preamble?",
+                        "Back": "42nd Constitutional Amendment Act, 1976.",
+                        "Image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=600&q=80"
+                      },
+                      "Quiz": {
+                        "Question": "Which Amendment added the words 'Socialist', 'Secular', and 'Integrity' to the Preamble?",
+                        "Options": {
+                          "A": "44th Amendment",
+                          "B": "42nd Amendment",
+                          "C": "86th Amendment",
+                          "D": "73rd Amendment"
+                        },
+                        "CorrectAnswer": "B",
+                        "Explanation": "The 42nd Constitutional Amendment Act of 1976 added the terms 'Socialist', 'Secular', and 'Integrity' to the Preamble."
+                      }
+                    }
+                  ],
+                  "PracticeMatching": [
+                    {
+                      "Term": "42nd Amendment (1976)",
+                      "Definition": "Added 'Socialist', 'Secular', and 'Integrity' to Preamble."
+                    },
+                    {
+                      "Term": "26th November 1949",
+                      "Definition": "Date of adoption of the Constitution of India."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
