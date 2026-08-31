@@ -65,7 +65,7 @@ export function HomePage({
         lessonName: firstUncompleted.lessonName,
         unitName: firstUncompleted.unitName,
         chapterName: firstUncompleted.chapterName,
-        topicsSummary: topSummary ? `Focus: ${topSummary}` : 'Explore core geographical concepts & micro-quizzes.'
+        topicsSummary: topSummary ? `Focus: ${topSummary}` : 'Explore constitutional concepts & micro-quizzes.'
       };
     }
 
@@ -82,10 +82,10 @@ export function HomePage({
 
     return {
       tag: 'RECOMMENDED STARTING POINT',
-      lessonName: 'Brahmaputra Valley',
-      unitName: 'Physiographic Divisions & Conservation',
-      chapterName: 'ASSAM',
-      topicsSummary: 'Physiography, north/south bank tributaries, and floodplains.'
+      lessonName: firstLessonEver?.lessonName || 'Preamble & Salient Features',
+      unitName: firstLessonEver?.unitName || 'Constitutional Framework & Preamble',
+      chapterName: firstLessonEver?.chapterName || 'INDIAN CONSTITUTION',
+      topicsSummary: 'Explore constitutional concepts & micro-quizzes.'
     };
   };
 

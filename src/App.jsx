@@ -125,17 +125,18 @@ function parseSyllabus(json) {
   return { chaptersList, syllabusHierarchy, studyDb };
 }
 
-const { syllabusHierarchy, studyDb: STUDY_DATABASE } = parseSyllabus(syllabusData);
+const defaultChapter = (syllabusHierarchy && syllabusHierarchy.length > 0) ? syllabusHierarchy[0].chapterName : 'INDIAN CONSTITUTION';
+const defaultLesson = (syllabusHierarchy && syllabusHierarchy.length > 0 && syllabusHierarchy[0].units.length > 0 && syllabusHierarchy[0].units[0].lessons.length > 0) ? syllabusHierarchy[0].units[0].lessons[0].lessonName : 'Preamble & Salient Features';
 
 export default function App() {
   const [xp, setXp] = useState(() => loadState('adre_xp', 0));
   const [streak, setStreak] = useState(() => getStreak());
-  const [activeChapter, setActiveChapter] = useState('ASSAM');
+  const [activeChapter, setActiveChapter] = useState(defaultChapter);
   const [viewMode, setViewMode] = useState('home');
   const [activeLesson, setActiveLesson] = useState(null);
 
-  const [selectedLesson, setSelectedLesson] = useState('Brahmaputra Valley');
-  const [mapViewerTab, setMapViewerTab] = useState('ASSAM'); // 'ASSAM' | 'NE' | 'INDIA'
+  const [selectedLesson, setSelectedLesson] = useState(defaultLesson);
+  const [mapViewerTab, setMapViewerTab] = useState(defaultChapter); // Active region tab
   const [activeActivity, setActiveActivity] = useState(null);
   const [activeActivityData, setActiveActivityData] = useState(null);
 
@@ -461,7 +462,7 @@ export default function App() {
             onStartMCQ={(lesName) => startMCQ(lesName || selectedLesson)}
             onExploreMap={() => setViewMode('map_hub')}
             onExploreTopics={() => {
-              setActiveChapter('ASSAM');
+              setActiveChapter(defaultChapter);
               setViewMode('chapter');
             }}
           />
